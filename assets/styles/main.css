@@ -1,6 +1,7 @@
 /* Variables */
 :root {
   /* Primarios */
+  --soft-blue: hsl(200, 100%, 62%);
   --soft-red: hsl(7, 99%, 70%);
   --yellow: hsl(51, 100%, 49%);
   --dark-desaturated-cyan: hsl(167, 40%, 24%);
@@ -32,4 +33,48 @@ a {
 body {
   font-family: system-ui;
   font-weight: normal;
+}
+.container {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+/* Home */
+.home {
+  background: url("../images/desktop/image-header.jpg") var(--soft-blue) center;
+  background-size: cover;
+}
+.home header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+.logo img {
+  vertical-align: middle;
+}
+.home menu a {
+  padding: 0.8rem 1.4rem;
+  color: var(--white);
+}
+.home menu a:last-child {
+  font-family: var(--title);
+  background: white;
+  color: black;
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+.home-content {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 16rem;
+}
+.home-content h2 {
+  font-family: var(--title);
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 3em;
+  letter-spacing: 8px;
+  margin-bottom: 4rem;
 }

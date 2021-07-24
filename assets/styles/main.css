@@ -6,7 +6,10 @@
   --yellow: hsl(51, 100%, 49%);
   --dark-desaturated-cyan: hsl(167, 40%, 24%);
   --dark-blue: hsl(198, 62%, 26%);
-  --dark-moderate-cyan: hsl(168, 34%, 41%);
+  --dark-moderate-cyan: hsl(168, 34%, 41%); 
+  --bg-testimonials:hsl(26, 100%, 99%);
+  --bg-footer:hsl(167, 44%, 70%);
+  
 
   /* Neutrales */
   --very-dark-desaturated-blue: hsl(212, 27%, 19%);
@@ -77,4 +80,80 @@ body {
   font-size: 3em;
   letter-spacing: 8px;
   margin-bottom: 4rem;
+}
+
+
+
+/*testimonials*/
+.testimonials{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;  
+  margin-top: 5em;
+  background-color:var(--bg-testimonials);
+  background-size: cover;
+}
+.testimonials h2{
+  margin: 3em 0em; 
+  font-family: var(--title);
+  text-align:center;
+  color: var(--grayish-blue);
+}
+.client {
+  display: flex;
+  flex-direction: row ;
+ }
+.client article {
+  padding: 1em 1.5em;
+  text-align:center;
+}
+.client img{
+  width: 4em;
+  border-radius: 5em;
+}
+.client p{
+  margin:2em 0;
+  font-family: var(--text);
+  color:var(--very-dark-grayish-blue);
+  line-height: 2em;
+  font-size: 18px;
+}
+.client div {
+  margin:4em 0;
+}
+.client div p {
+  margin:1em 0;
+  color:var(--grayish-blue);
+  font-size: 13px;
+}
+.client span {
+  font-family: var(--title);
+  color: var(--very-dark-desaturated-blue);
+  font-size: 19px;  
+  }
+
+
+  /* footer*/
+
+.footer{
+  background-color:var(--bg-footer);
+  padding: 5em 0;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+.footer div menu {
+  margin: 2.5em 0;
+}
+.footer div menu a {
+  margin: 0 1em;
+  color:var(--dark-desaturated-cyan) ;
+  font-family: var(--text);  
+}
+.footer div article {
+  text-align:center;
+}
+.footer div article a {
+  margin: 0 1em;
 }

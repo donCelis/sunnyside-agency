@@ -132,12 +132,23 @@ body {
   font-size: 19px;  
   }
 
+/*Gallery*/
+.container_gallery {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--bg-footer);
+  justify-content: center;
+}
+.container_gallery img {
+  width: 23.74em;
+  height: auto;
+}
 
   /* footer*/
 
 .footer{
   background-color:var(--bg-footer);
-  padding: 5em 0;
+  padding: 4em 0em 4em 0em; 
   display: flex;
   flex-direction: column; 
   align-items: center;

@@ -6,7 +6,7 @@
   --yellow: hsl(51, 100%, 49%);
   --dark-desaturated-cyan: hsl(167, 40%, 24%);
   --dark-blue: hsl(198, 62%, 26%);
-  --dark-moderate-cyan: hsl(168, 34%, 41%);
+  --dark-moderate-cyan: hsl(166, 44%, 70%);
 
   /* Neutrales */
   --very-dark-desaturated-blue: hsl(212, 27%, 19%);
@@ -173,7 +173,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 5em;
   background-color: var(--bg-testimonials);
   background-size: cover;
 }
@@ -187,7 +186,7 @@ body {
   display: flex;
   flex-direction: row;
 }
-.client article {
+.client .client-item {
   padding: 1em 1.5em;
   text-align: center;
 }
@@ -219,34 +218,40 @@ body {
 /*Gallery*/
 .container_gallery {
   display: flex;
-  flex-direction: row;
-  background-color: var(--bg-footer);
+  flex-flow: row wrap;
+  background-color: var(--dark-moderate-cyan);
   justify-content: center;
 }
-.container_gallery img {
-  width: 23.74em;
+.container_gallery picture {
+  flex-basis: 25%;
   height: auto;
+}
+.container_gallery picture img{
+  width: 100%;
+  vertical-align: middle;
 }
 
 /* footer*/
 .footer {
-  background-color: var(--bg-footer);
+  background-color: var(--dark-moderate-cyan);
   padding: 4em 0em 4em 0em;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
-.footer div menu {
+.footer .logo img{
+  width: 12rem;
+  filter: invert(1) opacity(0.55);
+}
+.footer nav {
   margin: 2.5em 0;
 }
-.footer div menu a {
+.footer nav a {
   margin: 0 1em;
   color: var(--dark-desaturated-cyan);
   font-family: var(--text);
 }
-.footer div article {
-  text-align: center;
-}
-.footer div article a {
+.footer .socials a {
   margin: 0 1em;
 }

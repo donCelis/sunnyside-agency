@@ -40,8 +40,12 @@ body {
 .container {
   width: 95%;
   margin: 0 auto;
-  max-width: 1440px;
-}
+  /*max-width: 1440px;*/
+  }
+  .container-fluid {
+    width: 100%;
+    margin: 0 auto;
+  }
 /* Home */
 .home {
   background: url("../images/desktop/image-header.jpg") var(--soft-blue) center;
@@ -82,6 +86,28 @@ body {
   margin-bottom: 4rem;
 }
 
+
+
+/*fruits*/
+.container_fruits{
+  display: flex;
+  grid-row: auto auto;  
+  }
+.container_fruits h3{
+  font-family:var(--title);
+}
+.container_fruits p{
+  font-family:var(--text);
+} .container_fruits
+
+.cereza{
+  background-image: url(../images/desktop/image-graphic-design.jpg);
+  color: var(--dark-desaturated-cyan);
+ }
+.orange{
+  background-image: url(../images/desktop/image-photography.jpg);
+  color: var(--dark-desaturated-cyan);
+}
 
 
 /*testimonials*/
@@ -153,7 +179,6 @@ body {
   flex-direction: column; 
   align-items: center;
 }
-
 .footer div menu {
   margin: 2.5em 0;
 }
@@ -168,3 +193,4 @@ body {
 .footer div article a {
   margin: 0 1em;
 }
+
